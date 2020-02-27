@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :first_name
       t.string :last_name
       t.string :email
-      t.boolean :active
+      t.boolean :active, :default => true
       t.datetime :created_at
       t.datetime :updated_at
 
